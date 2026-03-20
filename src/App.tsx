@@ -22,14 +22,14 @@ function App() {
         </h2>
       </div>
 
-      <Canvas camera={{ position: [0, 0, 5], fov: 50 }}>
-        <Suspense fallback={null}> 
+      <Canvas camera={{ position: [20, 20, 30], fov: 50 }}>
+        <Suspense fallback={null}>
           <Environment
             files="/rogland_clear_night_4k.exr"
-            background 
+            background
           />
           <OrbitControls
-            enableZoom={false} 
+            enableZoom={false}
             makeDefault
             autoRotate
             autoRotateSpeed={1}
